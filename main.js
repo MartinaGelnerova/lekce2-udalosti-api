@@ -14,3 +14,7 @@ function priNajetiNaCtverec() {
   // pocitadlo = pocitadlo + 1;
   pocitadlo++; //inkrementace: zvedne čislo o 1
 }
+
+function zmenStyl() {
+  nadpis.classList.toggle('zeleny');
+}
