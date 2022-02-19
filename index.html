@@ -9,23 +9,21 @@
 </head>
 <body>
 
-	<h1 onclick="zmenStyl()">Změna tříd, události</h1>
-
-  <p onmouseover="tucne()" onmouseout="normalni()">"V elipse spí lev."</p>
+	<p onmouseover="tucne()" onmouseout="normalni()">"V elipse spí lev."</p>
 
 	<button onclick="textCerveny()">Červený po kliknutí</button>
-
   <button onclick="textVetsi()">Větší po kliknutí</button>
 
-	<div onmouseover="priNajetiNaCtverec()" class="zluty"></div>
+	<h2>Audio ovladač</h2>
 
-	<div onmouseover="priNajetiNaCtverec()" class="ctverecek zeleny"></div>
+	<audio id="zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
-
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+  <button onclick="playAudio()">Hraj</button>
+  <button onclick="pauseAudio()">Pauzni</button>
+  <button onclick="silenceAudio()">Ztišit</button>
+  <button onclick="halfVolumeAudio()">Zvuk na polovic</button>
+  <button onclick="fullVolumeAudio()">Zvuk naplno</button>
+  <button onclick="rewindAudio()">Skoč na začátek</button>
 
   <script src = "main.js"></script>
 </body>

@@ -1,24 +1,5 @@
 // tady je místo pro náš program
 
-let nadpis = document.querySelector('h1');
-nadpis.classList.add('zluty');
-nadpis.classList.remove('zluty');
-
-let ctverecek = document.querySelector('div.zluty');
-ctverecek.classList.add('ctverecek');
-
-let pocitadlo = 0;
-
-function priNajetiNaCtverec() {
-  console.log('Test' + pocitadlo);
-  // pocitadlo = pocitadlo + 1;
-  pocitadlo++; //inkrementace: zvedne čislo o 1
-}
-
-function zmenStyl() {
-  let nadpis = document.querySelector('h1');
-  nadpis.classList.toggle('zeleny');
-}
 
 let odstavec = document.querySelector('p');
 odstavec.style.fontSize = '16px';
@@ -43,4 +24,40 @@ function textVetsi() {
   let fontVelikost = odstavec.style.fontSize.replace('px', '');
   fontVelikost++;
   odstavec.style.fontSize = fontVelikost + 'px';
+}
+
+function playAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Zapínám píseň...');
+  audioFile.play();
+}
+
+function pauseAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Pauzuju píseň...');
+  audioFile.pause();
+}
+
+function silenceAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Hlasitost 0%...');
+  audioFile.volume = '0.0';
+}
+
+function halfVolumeAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Hlasitost 50%...');
+  audioFile.volume = '0.5';
+}
+
+function fullVolumeAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Hlasitost 100%...');
+  audioFile.volume = '1.0';
+}
+
+function rewindAudio() {
+  let audioFile = document.getElementById('zvukovaStopa');
+  console.log('Skáču na začátek...');
+  audioFile.currentTime = '0.0';
 }
