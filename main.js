@@ -23,3 +23,18 @@ function zmenStyl() {
 let odstavec = document.querySelector('p');
 odstavec.style.fontSize = '16px';
 
+function tucne() {
+  let odstavec = document.querySelector('p');
+  odstavec.style.fontWeight = 'bold';
+}
+
+function normalni() {
+  let odstavec = document.querySelector('p');
+  odstavec.style.fontWeight = 'normal';
+}
+
+
+function textCerveny() {
+  let odstavec = document.querySelector('p');
+  odstavec.classList.toggle('cerveny')
+}
