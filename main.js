@@ -33,8 +33,14 @@ function normalni() {
   odstavec.style.fontWeight = 'normal';
 }
 
-
 function textCerveny() {
   let odstavec = document.querySelector('p');
   odstavec.classList.toggle('cerveny')
+}
+
+function textVetsi() {
+  let odstavec = document.querySelector('p');
+  let fontVelikost = odstavec.style.fontSize.replace('px', '');
+  fontVelikost++;
+  odstavec.style.fontSize = fontVelikost + 'px';
 }
