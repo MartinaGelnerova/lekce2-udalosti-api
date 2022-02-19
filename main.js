@@ -16,5 +16,10 @@ function priNajetiNaCtverec() {
 }
 
 function zmenStyl() {
+  let nadpis = document.querySelector('h1');
   nadpis.classList.toggle('zeleny');
 }
+
+let odstavec = document.querySelector('p');
+odstavec.style.fontSize = '16px';
+
